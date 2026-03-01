@@ -3,8 +3,6 @@ import { FaDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 import my_img from "../../assets/my-pic.jpeg";
 
-/* ================= ROLES DATA ================= */
-
 const roles = [
   "DIT Expert",
   "Graphic Designer",
@@ -12,8 +10,6 @@ const roles = [
   "UI / UX Designer",
   "React Frontend Developer",
 ];
-
-/* ================= FRAMER MOTION ================= */
 
 const fromTop = {
   hidden: { opacity: 0, y: -60 },
@@ -34,7 +30,9 @@ const imageFromTop = {
   },
 };
 
+
 /* ================= HERO ================= */
+
 
 const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0);
