@@ -13,17 +13,18 @@ const About = () => {
     },
   };
 
-  // Container for staggered text (heading + paragraphs)
   const textContainer = {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.3, // delay between each child
+        staggerChildren: 0.3,
       },
     },
   };
 
-  // Each text element variant (slides from top)
+    
+    // Each text element variant (slides from top)
+    
   const textVariant = {
     hidden: { opacity: 0, y: -60 },
     visible: {
