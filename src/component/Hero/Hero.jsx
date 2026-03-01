@@ -175,8 +175,6 @@ const imageFromTop = {
   },
 };
 
-/* ================= HERO ================= */
-
 const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -214,71 +212,71 @@ const Hero = () => {
   }, [charIndex, roleIndex]);
 
   return (
-    <section
-      id="home"
-      className="flex flex-col md:flex-row items-center justify-between bg-gray-800 px-6 sm:px-8 py-12 md:py-0 text-white min-h-screen"
-    >
-      {/* LEFT SIDE */}
-      <div className="md:w-1/2 space-y-5 text-center md:text-left">
-        <div className="space-y-3">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-            I'm Syed
-          </h1>
+    <section className="bg-gray-800 text-white min-h-screen flex items-center">
+      {/* CENTERED CONTAINER — THIS CONTROLS THE DISTANCE */}
+      <div className="max-w-6xl mx-auto w-full px-6 sm:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+        {/* LEFT SIDE */}
+        <div className="md:w-[48%] space-y-5 text-center md:text-left">
+          <div className="space-y-3">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+              I'm Syed
+            </h1>
 
-          <span className="block text-2xl sm:text-3xl md:text-4xl font-bold text-purple-500">
-            Yousaf
-          </span>
-
-          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">
-            <span className="text-white">I'm Into </span>
-            <span className="text-purple-500">
-              {text}
-              <span className="ml-1">{cursor && "|"}</span>
+            <span className="block text-2xl sm:text-3xl md:text-4xl font-bold text-purple-500">
+              Yousaf
             </span>
-          </h2>
+
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">
+              <span className="text-white">I'm Into </span>
+              <span className="text-purple-500">
+                {text}
+                <span className="ml-1">{cursor && "|"}</span>
+              </span>
+            </h2>
+          </div>
+
+          {/* BUTTONS */}
+          <motion.div
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center md:items-start"
+            variants={fromTop}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.4 }}
+          >
+            <motion.a
+              href="#projects"
+              whileHover={{ scale: 1.05 }}
+              className="px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-md font-medium text-center"
+            >
+              Explore Projects
+            </motion.a>
+
+            <motion.a
+              href="/resume.pdf"
+              download
+              whileHover={{ scale: 1.05 }}
+              className="flex items-center justify-center px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-md font-medium"
+            >
+              <FaDownload className="mr-2" /> Resume
+            </motion.a>
+          </motion.div>
         </div>
 
-        {/* BUTTONS */}
+        {/* RIGHT IMAGE */}
         <motion.div
-          className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center md:items-start"
-          variants={fromTop}
+          className="md:w-[48%] flex justify-center"
+          variants={imageFromTop}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.4 }}
         >
-          <motion.a
-            href="#projects"
-            whileHover={{ scale: 1.05 }}
-            className="px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-md font-medium text-center"
-          >
-            Explore Projects
-          </motion.a>
-
-          <motion.a
-            href="/resume.pdf"
-            download
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center justify-center px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-md font-medium"
-          >
-            <FaDownload className="mr-2" /> Resume
-          </motion.a>
+          <img
+            src={my_img}
+            alt="Yousaf"
+            className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 object-cover rounded-full"
+          />
         </motion.div>
       </div>
-
-      {/* RIGHT IMAGE */}
-      <motion.div
-        className="md:w-1/2 mt-6 md:mt-0 flex justify-center"
-        variants={imageFromTop}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.4 }}
-      >
-        <img
-          src={my_img}
-          alt="Yousaf"
-          className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 object-cover rounded-full"
-        />
-      </motion.div>
     </section>
   );
 };
