@@ -2,11 +2,13 @@ import React, { useState, useRef } from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 import { motion, useInView } from "framer-motion";
 
+
 const Contact = () => {
   const [status, setStatus] = useState("");
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { amount: 0.3, once: false });
 
+    
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -30,6 +32,7 @@ const Contact = () => {
     }
   };
 
+    
   return (
     <section
       ref={sectionRef}
