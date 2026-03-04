@@ -15,7 +15,7 @@ const Footer = () => {
           </p>
           <div className="flex gap-4 mt-2">
             <a
-              href="https://www.linkedin.com/in/itx-yousaf-b468a3391"
+              href="https://www.linkedin.com/in/syed-yousaf-b468a3391"
               className="hover:text-purple-400"
             >
               <FaLinkedin size={35} />
