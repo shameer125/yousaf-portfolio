@@ -83,7 +83,8 @@ const Projects = () => {
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+            <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center 
+            gap-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
               <h3 className="text-xl font-bold">{project.title}</h3>
 
               <div className="flex gap-4">
@@ -91,7 +92,8 @@ const Projects = () => {
                   // href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2 bg-gray-900 px-4 py-2 rounded-md hover:bg-gray-700 transition"
+                  className="flex items-center gap-2 bg-gray-900 px-4 py-2 rounded-md 
+                  hover:bg-gray-700 transition"
                 >
                   <FaGithub /> GitHub
                 </a>
@@ -100,7 +102,8 @@ const Projects = () => {
                   // href={project.live}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2 bg-purple-500 px-4 py-2 rounded-md hover:bg-purple-600 transition"
+                  className="flex items-center gap-2 bg-purple-500 px-4 py-2 rounded-md hover:bg-purple-600 
+                  transition"
                 >
                   <FaExternalLinkAlt /> Live
                 </a>
