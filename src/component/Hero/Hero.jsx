@@ -214,7 +214,8 @@ const Hero = () => {
   return (
     <section className="bg-gray-800 text-white min-h-screen flex items-center">
       {/* CENTERED CONTAINER — THIS CONTROLS THE DISTANCE */}
-      <div className="max-w-6xl mx-auto w-full px-6 sm:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+      <div className="max-w-6xl mx-auto w-full px-6 sm:px-8 flex flex-col md:flex-row items-center 
+      gap-10 md:gap-16">
         {/* LEFT SIDE */}
         <div className="md:w-[48%] space-y-5 text-center md:text-left">
           <div className="space-y-3">
@@ -246,7 +247,8 @@ const Hero = () => {
             <motion.a
               href="#projects"
               whileHover={{ scale: 1.05 }}
-              className="px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-md font-medium text-center"
+              className="px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-md font-medium 
+              text-center"
             >
               Explore Projects
             </motion.a>
@@ -255,7 +257,8 @@ const Hero = () => {
               href="/resume.pdf"
               download
               whileHover={{ scale: 1.05 }}
-              className="flex items-center justify-center px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-md font-medium"
+              className="flex items-center justify-center px-6 py-3 bg-purple-500 hover:bg-purple-600
+              rounded-md font-medium"
             >
               <FaDownload className="mr-2" /> Resume
             </motion.a>
