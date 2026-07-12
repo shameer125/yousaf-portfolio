@@ -97,32 +97,37 @@ const Contact = () => {
               name="name"
               placeholder="Your Name"
               required
-              className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-purple-500"
+              className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none 
+              focus:border-purple-500"
             />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               required
-              className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-purple-500"
+              className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none 
+              focus:border-purple-500"
             />
             <input
               type="text"
               name="subject"
               placeholder="Subject"
-              className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-purple-500"
+              className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none 
+              focus:border-purple-500"
             />
             <textarea
               name="message"
               rows="5"
               placeholder="Your Message"
               required
-              className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-purple-500 resize-none"
+              className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none 
+              focus:border-purple-500 resize-none"
             />
 
             <button
               type="submit"
-              className="bg-purple-500 hover:bg-purple-600 text-white py-3 rounded-md font-medium transition-colors"
+              className="bg-purple-500 hover:bg-purple-600 text-white py-3 rounded-md font-medium 
+              transition-colors"
             >
               Send Message
             </button>
